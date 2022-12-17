@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="m-4">
+    <a href="{{request.META.HTTP_REFERER|escape}} " class="btn btn-dark"> <- Go back</a>
+</div>
+<div class="container mt-5 p-4 ">
+    <form action="" method="post" class="m-3">
+        {% csrf_token %}
+        <div class="col-12">
+            {{ form|crispy }}
+        </div>
+        <button type="submit" class="btn btn-primary mt-2"> Create </button>
+    </form>
+</div>
+{% endblock content %}
