@@ -3,7 +3,7 @@
 
 # Duplex Tweet 📰️
 
-    A restful api make with django-rest-framework.
+    A restful api for quotes made with django-rest-framework.
 
 </div>
 
